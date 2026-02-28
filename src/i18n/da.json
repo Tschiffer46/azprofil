@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "services": "Ydelser",
+    "partners": "Partnere",
+    "about": "Om os",
+    "testimonials": "Kundanmeldelser",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "Vi klæder alle fra rengøringsassistent til direktør",
+      "cta": "Kontakt os"
+    },
+    "slide2": {
+      "tagline": "Hurtig levering & nem bestilling",
+      "cta": "Se vores ydelser"
+    },
+    "slide3": {
+      "tagline": "Din kreative partner for profilbeklædning",
+      "cta": "Læs mere"
+    }
+  },
+  "services": {
+    "title": "Vores ydelser",
+    "profilklader": {
+      "name": "Profilbeklædning",
+      "description": "Tøj med jeres logo og profil"
+    },
+    "arbetsklader": {
+      "name": "Arbejdstøj",
+      "description": "Funktionelt tøj til krævende miljøer"
+    },
+    "profilartiklar": {
+      "name": "Profilartikler",
+      "description": "Kuglepenne, krus, tasker og mere"
+    },
+    "forbrukning": {
+      "name": "Forbrugsmaterialer",
+      "description": "Kontorsmaterialer og forbrugsvarer"
+    },
+    "tryck": {
+      "name": "Tryk & Design",
+      "description": "Vi designer jeres logo og grafiske profil"
+    }
+  },
+  "partners": {
+    "title": "Vores partnere",
+    "intro": "Vi samarbejder med førende brands inden for profilbeklædning og arbejdstøj",
+    "visitWebsite": "Besøg hjemmeside"
+  },
+  "testimonials": {
+    "title": "Hvad vores kunder siger"
+  },
+  "about": {
+    "title": "Om os",
+    "description": "AZ Profil AB er en virksomhed baseret i Lund, Skåne, med passion for profilbeklædning og virksomhedsprofilering. Med eget tryk og designkapacitet tilbyder vi en komplet løsning til din virksomheds visuelle profil.",
+    "team": {
+      "gustav": {
+        "name": "Gustav Azrak",
+        "title": "Grundlægger & Direktør",
+        "bio": "Gustav har lang erfaring inden for profilbeklædning og virksomhedsprofilering. Med en stærk drive for kvalitet og kunderelationer har han bygget AZ Profil til en pålidelig partner for virksomheder i hele Sverige."
+      },
+      "jonathan": {
+        "name": "Jonathan Lindblad",
+        "title": "Medstifter & Salg",
+        "bio": "Jonathan har en baggrund inden for salg og kundeservice og brænder for at finde den rigtige løsning til hver kunde. Hans engagement og lydhørhed gør ham til en værdsat kontakt for både nye og eksisterende kunder."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt os",
+    "generalEmail": "Generelle henvendelser",
+    "orderEmail": "Bestillinger",
+    "address": "Adresse",
+    "form": {
+      "name": "Navn",
+      "namePlaceholder": "Dit navn",
+      "email": "E-mail",
+      "emailPlaceholder": "din@email.dk",
+      "phone": "Telefon (valgfrit)",
+      "phonePlaceholder": "+45 ...",
+      "subject": "Emne",
+      "subjectOptions": {
+        "general": "Generel henvendelse",
+        "order": "Bestilling",
+        "design": "Designopgave",
+        "other": "Andet"
+      },
+      "message": "Besked",
+      "messagePlaceholder": "Beskriv jeres behov...",
+      "submit": "Send besked",
+      "submitting": "Sender...",
+      "success": "Tak! Din besked er blevet sendt. Vi vender tilbage hurtigst muligt.",
+      "error": "Noget gik galt. Prøv venligst igen eller kontakt os direkte via e-mail."
+    }
+  },
+  "footer": {
+    "privacy": "Fortrolighedspolitik",
+    "accessibility": "Tilgængelighedserklæring",
+    "cookies": "Cookiepolitik",
+    "gdpr": "Vi behandler dine personoplysninger i overensstemmelse med GDPR.",
+    "accessibility_note": "Hjemmesiden stræber efter at opfylde WCAG 2.1 AA-standarden.",
+    "built_by": "Hjemmeside oprettet af ATM AB",
+    "copyright": "© 2026 AZ Profil AB. Alle rettigheder forbeholdes."
+  },
+  "cookie": {
+    "message": "Vi bruger cookies for at forbedre din oplevelse på vores hjemmeside. Læs mere i vores",
+    "policy": "cookiepolitik",
+    "acceptAll": "Accepter alle",
+    "necessaryOnly": "Kun nødvendige"
+  },
+  "lang": {
+    "sv": "Svenska",
+    "da": "Dansk"
+  }
+}
