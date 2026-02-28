@@ -1,17 +1,23 @@
 import { useTranslation } from 'react-i18next';
 import { partners } from '../data/partners';
 
-// SVG placeholder for partner logos
-function PartnerLogoPlaceholder({ name }: { name: string }) {
-  const initials = name
-    .split(' ')
-    .map((w) => w[0])
-    .join('')
-    .slice(0, 3)
-    .toUpperCase();
+function PartnerLogo({ name, logo }: { name: string; logo: string }) {
   return (
-    <div className="w-full h-20 flex items-center justify-center bg-[#f0f0f0] rounded-lg">
-      <span className="text-[#333] font-bold text-sm tracking-wide">{initials}</span>
+    <div className="w-full h-20 flex items-center justify-center bg-white rounded-lg p-2">
+      <img
+        src={logo}
+        alt={name}
+        className="max-h-full max-w-full object-contain"
+        onError={(e) => {
+          const target = e.currentTarget as HTMLImageElement;
+          target.style.display = 'none';
+          const parent = target.parentElement;
+          if (parent) {
+            const initials = name.split(' ').map((w) => w[0]).join('').slice(0, 3).toUpperCase();
+            parent.innerHTML = `<span style="color:#333;font-weight:bold;font-size:0.875rem;letter-spacing:0.05em">${initials}</span>`;
+          }
+        }}
+      />
     </div>
   );
 }
@@ -36,7 +42,7 @@ export default function Partners() {
               className="bg-[#1A1A1A] rounded-xl p-6 border border-[#2a2a2a] hover:border-[#4BC8D8]/40 transition-all duration-300 flex flex-col"
             >
               <div className="mb-4">
-                <PartnerLogoPlaceholder name={partner.name} />
+                <PartnerLogo name={partner.name} logo={partner.logo} />
               </div>
               <h3 className="text-white font-bold text-lg mb-2">{partner.name}</h3>
               <p className="text-[#A0A0A0] text-sm flex-grow leading-relaxed">
