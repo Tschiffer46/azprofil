@@ -54,7 +54,17 @@ export default function Footer() {
           <p className="text-[#555] text-xs">{t('footer.accessibility_note')}</p>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 pt-2">
             <p className="text-[#555] text-xs">{t('footer.copyright')}</p>
-            <p className="text-[#555] text-xs">{t('footer.built_by')}</p>
+            <p className="text-[#555] text-xs">
+              Webbplats skapad av{' '}
+              <a
+                href="https://agiletransition.se"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4BC8D8] hover:underline"
+              >
+                ATM AB
+              </a>
+            </p>
           </div>
         </div>
       </div>
