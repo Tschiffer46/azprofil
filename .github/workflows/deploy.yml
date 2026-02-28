@@ -1,7 +1,7 @@
-# Required GitHub Secrets:
-#   HETZNER_HOST     - IP address or hostname of the Hetzner server
-#   HETZNER_USER     - SSH username (e.g., deploy or ubuntu)
-#   HETZNER_SSH_KEY  - Private SSH key content for authentication
+# Required GitHub Secrets (same names used across all ATM AB deployments):
+#   SERVER_HOST     - IP address or hostname of the Hetzner server
+#   SERVER_USER     - SSH username (deploy)
+#   SERVER_SSH_KEY  - Private SSH key content for authentication
 #
 # To add secrets: GitHub repo → Settings → Secrets and variables → Actions → New repository secret
 
@@ -18,7 +18,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -33,12 +33,19 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Hetzner via rsync
-        uses: burnett01/rsync-deployments@7.0.1
-        with:
-          switches: -avzr --delete
-          path: dist/
-          remote_path: ~/hosting/sites/client-azprofil/dist
-          remote_host: ${{ secrets.HETZNER_HOST }}
-          remote_user: ${{ secrets.HETZNER_USER }}
-          remote_key: ${{ secrets.HETZNER_SSH_KEY }}
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to server
+        run: |
+          rsync -avz --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='README.md' \
+            --exclude='node_modules' \
+            -e "ssh -i ~/.ssh/id_ed25519" \
+            ./dist/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:~/hosting/sites/client-azprofil/dist/
