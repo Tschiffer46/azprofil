@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "services": "Tjänster",
+    "partners": "Partners",
+    "about": "Om oss",
+    "testimonials": "Kundröster",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "Vi klär allt från städerska till VD",
+      "cta": "Kontakta oss"
+    },
+    "slide2": {
+      "tagline": "Snabba leveranser & enkel beställning",
+      "cta": "Se våra tjänster"
+    },
+    "slide3": {
+      "tagline": "Din kreativa partner för profilkläder",
+      "cta": "Läs mer"
+    }
+  },
+  "services": {
+    "title": "Våra tjänster",
+    "profilklader": {
+      "name": "Profilkläder",
+      "description": "Kläder med er logotyp och profil"
+    },
+    "arbetsklader": {
+      "name": "Arbetskläder",
+      "description": "Funktionella kläder för krävande miljöer"
+    },
+    "profilartiklar": {
+      "name": "Profilartiklar",
+      "description": "Pennor, muggar, väskor och mer"
+    },
+    "forbrukning": {
+      "name": "Förbrukningsmaterial",
+      "description": "Kontorsmaterial och förbrukningsvaror"
+    },
+    "tryck": {
+      "name": "Tryck & Design",
+      "description": "Vi designar er logotyp och grafiska profil"
+    }
+  },
+  "partners": {
+    "title": "Våra partners",
+    "intro": "Vi samarbetar med ledande varumärken inom profilkläder och arbetskläder",
+    "visitWebsite": "Besök webbplats"
+  },
+  "testimonials": {
+    "title": "Vad våra kunder säger"
+  },
+  "about": {
+    "title": "Om oss",
+    "description": "AZ Profil AB är ett företag baserat i Lund, Skåne, med passion för profilkläder och företagsprofilering. Med eget tryck och designkapacitet erbjuder vi en komplett lösning för ditt företags visuella profil.",
+    "team": {
+      "gustav": {
+        "name": "Gustav Azrak",
+        "title": "Grundare & VD",
+        "bio": "Gustav har lång erfarenhet inom profilkläder och företagsprofilering. Med ett starkt driv för kvalitet och kundrelationer har han byggt AZ Profil till en pålitlig partner för företag i hela Sverige."
+      },
+      "jonathan": {
+        "name": "Jonathan Lindblad",
+        "title": "Medgrundare & Försäljning",
+        "bio": "Jonathan har en bakgrund inom försäljning och kundservice och brinner för att hitta rätt lösning för varje kund. Hans engagemang och lyhördhet gör honom till en uppskattad kontakt för både nya och befintliga kunder."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakta oss",
+    "generalEmail": "Allmänna frågor",
+    "orderEmail": "Beställningar",
+    "address": "Adress",
+    "form": {
+      "name": "Namn",
+      "namePlaceholder": "Ditt namn",
+      "email": "E-post",
+      "emailPlaceholder": "din@email.se",
+      "phone": "Telefon (valfritt)",
+      "phonePlaceholder": "+46 ...",
+      "subject": "Ämne",
+      "subjectOptions": {
+        "general": "Allmän fråga",
+        "order": "Beställning",
+        "design": "Designuppdrag",
+        "other": "Övrigt"
+      },
+      "message": "Meddelande",
+      "messagePlaceholder": "Beskriv ert behov...",
+      "submit": "Skicka meddelande",
+      "submitting": "Skickar...",
+      "success": "Tack! Ditt meddelande har skickats. Vi återkommer så snart som möjligt.",
+      "error": "Något gick fel. Vänligen försök igen eller kontakta oss direkt via e-post."
+    }
+  },
+  "footer": {
+    "privacy": "Integritetspolicy",
+    "accessibility": "Tillgänglighetsredogörelse",
+    "cookies": "Cookiepolicy",
+    "gdpr": "Vi behandlar dina personuppgifter i enlighet med GDPR och dataskyddsförordningen.",
+    "accessibility_note": "Webbplatsen strävar efter att uppfylla WCAG 2.1 AA-standard enligt DOS-lagen.",
+    "built_by": "Webbplats skapad av ATM AB",
+    "copyright": "© 2026 AZ Profil AB. Alla rättigheter förbehållna."
+  },
+  "cookie": {
+    "message": "Vi använder cookies för att förbättra din upplevelse på vår webbplats. Läs mer i vår",
+    "policy": "cookiepolicy",
+    "acceptAll": "Acceptera alla",
+    "necessaryOnly": "Endast nödvändiga"
+  },
+  "lang": {
+    "sv": "Svenska",
+    "da": "Dansk"
+  }
+}
