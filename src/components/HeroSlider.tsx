@@ -6,19 +6,22 @@ const slides = [
     taglineKey: 'hero.slide1.tagline',
     ctaKey: 'hero.slide1.cta',
     ctaHref: '#contact',
-    gradient: 'from-black via-[#0a2a2e] to-[#0d1a1a]',
+    image: '/assets/images/hero/hero-1.jpg',
+    gradient: 'from-black/60 via-black/40 to-black/60',
   },
   {
     taglineKey: 'hero.slide2.tagline',
     ctaKey: 'hero.slide2.cta',
     ctaHref: '#services',
-    gradient: 'from-[#0d1a1a] via-black to-[#0a2a2e]',
+    image: '/assets/images/hero/hero-2.jpg',
+    gradient: 'from-black/60 via-black/40 to-black/60',
   },
   {
     taglineKey: 'hero.slide3.tagline',
     ctaKey: 'hero.slide3.cta',
     ctaHref: '#about',
-    gradient: 'from-[#0a2a2e] via-[#0d1a1a] to-black',
+    image: '/assets/images/hero/hero-3.jpg',
+    gradient: 'from-black/60 via-black/40 to-black/60',
   },
 ];
 
@@ -60,15 +63,21 @@ export default function HeroSlider() {
     <section
       id="hero"
       className="relative h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        background: `linear-gradient(135deg, #000000 0%, #0a2a2e 50%, #000000 100%)`,
-      }}
     >
-      {/* Background gradient overlay */}
-      <div
-        className={`absolute inset-0 bg-gradient-to-br ${slide.gradient} transition-opacity duration-700`}
-        style={{ opacity: isTransitioning ? 0 : 1 }}
-      />
+      {/* Background images */}
+      {slides.map((s, i) => (
+        <div
+          key={i}
+          className="absolute inset-0 bg-center bg-cover transition-opacity duration-700"
+          style={{
+            backgroundImage: `url(${s.image})`,
+            opacity: i === current ? (isTransitioning ? 0 : 1) : 0,
+          }}
+        />
+      ))}
+
+      {/* Dark overlay */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${slide.gradient}`} />
 
       {/* Turquoise decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -83,7 +92,7 @@ export default function HeroSlider() {
           isTransitioning ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight drop-shadow-lg">
           {t(slide.taglineKey)}
         </h1>
         <button
