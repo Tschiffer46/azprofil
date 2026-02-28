@@ -39,17 +39,21 @@ export default function Navbar() {
           <a
             href="#"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2"
+            className="flex items-center"
           >
             <img
               src="/assets/images/logo/az-profil-logo.png"
               alt="AZ Profil AB"
-              className="h-10 w-auto"
-              onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+              className="h-14 w-auto"
+              onError={(e) => {
+                const target = e.currentTarget as HTMLImageElement;
+                target.style.display = 'none';
+                const parent = target.parentElement;
+                if (parent) {
+                  parent.innerHTML = '<span class="text-white font-bold text-xl"><span style="color:#4BC8D8">AZ</span> PROFIL AB</span>';
+                }
+              }}
             />
-            <span className="text-white font-bold text-xl">
-              <span className="text-[#4BC8D8]">AZ</span> PROFIL AB
-            </span>
           </a>
 
           {/* Desktop nav */}
