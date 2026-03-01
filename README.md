@@ -27,7 +27,7 @@ npm run preview
 ## Deployment
 Automatic on push to `main` via GitHub Actions → Hetzner (rsync).
 
-Required secrets: `HETZNER_HOST`, `HETZNER_USER`, `HETZNER_SSH_KEY`
+Required secrets: `SERVER_HOST`, `SERVER_USER`, `SERVER_SSH_KEY`
 
 ## Contact
 info@azprofil.se | order@azprofil.se | Åkergränden 7, 226 60 Lund
