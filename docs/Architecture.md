@@ -52,4 +52,4 @@ docs/            # Project documentation
 ## Deployment
 Push to `main` branch triggers GitHub Actions build + rsync deploy to Hetzner.
 
-Required GitHub Secrets: HETZNER_HOST, HETZNER_USER, HETZNER_SSH_KEY
+Required GitHub Secrets: SERVER_HOST, SERVER_USER, SERVER_SSH_KEY
