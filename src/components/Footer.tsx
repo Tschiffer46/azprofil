@@ -57,7 +57,7 @@ export default function Footer() {
             <p className="text-[#555] text-xs">
               Webbplats skapad av{' '}
               <a
-                href="https://agiletransition.se"
+                href="https://hemsidor.agiletransition.se"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#4BC8D8] hover:underline"
